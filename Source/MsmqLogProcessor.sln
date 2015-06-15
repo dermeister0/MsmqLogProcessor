@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSender", "TestSender\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestReceiver", "TestReceiver\TestReceiver.csproj", "{BDCAFC47-CC0F-48B1-90BB-E577239259CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogQueueProcessor", "LogQueueProcessor\LogQueueProcessor.csproj", "{1A7209BD-3B74-4E74-9AF2-E1F1A7C624CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BDCAFC47-CC0F-48B1-90BB-E577239259CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDCAFC47-CC0F-48B1-90BB-E577239259CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDCAFC47-CC0F-48B1-90BB-E577239259CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7209BD-3B74-4E74-9AF2-E1F1A7C624CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7209BD-3B74-4E74-9AF2-E1F1A7C624CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7209BD-3B74-4E74-9AF2-E1F1A7C624CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7209BD-3B74-4E74-9AF2-E1F1A7C624CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
