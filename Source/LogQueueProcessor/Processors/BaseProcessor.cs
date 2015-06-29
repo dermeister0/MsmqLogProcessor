@@ -12,6 +12,8 @@ namespace LogQueueProcessor.Processors
 
         public void Start(object argument)
         {
+            Initialize();
+
             thread = new Thread(ProcessLoop);
             thread.Start();
         }
