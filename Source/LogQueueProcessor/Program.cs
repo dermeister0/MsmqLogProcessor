@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceProcess;
+using System.Windows.Forms;
 
 namespace LogQueueProcessor
 {
@@ -14,12 +10,18 @@ namespace LogQueueProcessor
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[] 
+#if !DEBUG
+            ServiceBase[] servicesToRun = new ServiceBase[] 
             { 
                 new LogQueueProcessService() 
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(servicesToRun);
+#else
+            var service = new LogQueueProcessService();
+            service.StartService();
+            MessageBox.Show("Click OK to close the service.");
+            service.StopService();
+#endif
         }
     }
 }
