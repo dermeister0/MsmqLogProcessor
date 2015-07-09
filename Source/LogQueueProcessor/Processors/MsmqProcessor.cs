@@ -17,7 +17,8 @@ namespace LogQueueProcessor.Processors
         protected override void Initialize()
         {
             queue = new MessageQueue(ConfigurationManager.AppSettings["LogQueueName"]);
-            writer = new LogentriesWriter();
+            //writer = new LogentriesWriter();
+            writer = new LogglyWriter();
         }
 
         protected override void DoIteration()
