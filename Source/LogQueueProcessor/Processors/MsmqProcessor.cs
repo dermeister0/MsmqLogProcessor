@@ -36,7 +36,7 @@ namespace LogQueueProcessor.Processors
                     using (var reader = new StreamReader(message.BodyStream))
                     {
                         var body = reader.ReadToEnd();
-                        writer.Write(body);
+                        writer.Write(new LogRow(body));
                     }
                 }
                 catch (MessageQueueException ex)

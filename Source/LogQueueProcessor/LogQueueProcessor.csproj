@@ -74,6 +74,7 @@
     <Compile Include="LogQueueProcessService.Designer.cs">
       <DependentUpon>LogQueueProcessService.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogRow.cs" />
     <Compile Include="Processors\BaseProcessor.cs" />
     <Compile Include="Processors\MsmqProcessor.cs" />
     <Compile Include="Processors\IProcessor.cs" />

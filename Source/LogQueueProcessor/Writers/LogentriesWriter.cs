@@ -6,9 +6,9 @@ namespace LogQueueProcessor.Writers
     {
         private readonly AsyncLogger asyncLogger = new AsyncLogger();
 
-        public void Write(string message)
+        public void Write(LogRow logRow)
         {
-            asyncLogger.AddLine(message);
+            asyncLogger.AddLine(logRow.RawMessage);
         }
     }
 }

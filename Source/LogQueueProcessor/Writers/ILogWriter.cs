@@ -2,6 +2,6 @@
 {
     internal interface ILogWriter
     {
-        void Write(string message);
+        void Write(LogRow logRow);
     }
 }
